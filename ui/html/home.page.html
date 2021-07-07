@@ -1,0 +1,29 @@
+{{template "base" .}}
+ 
+{{define "title"}}Домашняя страницы{{end}}
+ 
+{{define "main"}}
+
+<p>Новая заметка</p>
+<form action="/snippet/create" method="post">
+    <div><input type="text" name="title" placeholder="Заголовок"></div>
+    <div><input type="text" name="note" placeholder="Текст заметки"></div>
+    <div><input type="submit" value="Добавить"></div>
+</form>
+<h2>Последние заметки</h2>
+
+    {{range .}}
+    <div style="display: flex;">
+        <form form action="/snippet/delete" method="post">
+            <input type="hidden" name="id" value="{{.ID}}">
+            <button>
+                <img src="/static/img/logo.jpg" width="10px" height="10px">
+            </button>
+        </form>
+        <p>{{.Content}}</p>
+    </div>
+    {{else}}
+        <p>Пока здесь ничего нет!</p>
+    {{end}}
+{{end}}
+

@@ -1,0 +1,18 @@
+{{template "base" .}}
+
+{{define "title"}}Новая заметка{{end}}
+
+{{define "main"}}
+
+<form>
+    <div><input type="text" name="signature"></div>
+    <div><input type="submit" value="Добавить"></div>
+</form>
+<!--<h2>Последние заметки</h2>-->
+<!--{{range .}}-->
+<!--<p>{{.}}</p>-->
+<!--{{else}}-->
+<!--<p>Пока здесь ничего нет!</p>-->
+<!--{{end}}-->
+
+{{end}}
