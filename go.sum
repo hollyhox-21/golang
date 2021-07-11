@@ -1,2 +1,4 @@
 github.com/go-sql-driver/mysql v1.6.0 h1:BCTh4TKNUYmOmMUcQ3IipzF5prigylS7XXjEkfCHuOE=
 github.com/go-sql-driver/mysql v1.6.0/go.mod h1:DCzpHaOWr8IXmIStZouvnhqoel9Qv2LBy8hT2VhHyBg=
+github.com/hollyhox-21/notpad v0.0.0-20210707203401-aed11d9ad4a6 h1:01Vyc1bt/Pj30fFrDhOrHE4C6Nl9Bxyk2+Af+8S+bzY=
+github.com/hollyhox-21/notpad v0.0.0-20210707203401-aed11d9ad4a6/go.mod h1:aiMIxmBVmfj/GSZ6Vtn0auudRjN/pW0wXbEzibo8pgg=
