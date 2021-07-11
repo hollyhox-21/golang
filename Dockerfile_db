@@ -1,0 +1,6 @@
+FROM alpine
+
+RUN apk add netcat-openbsd mysql-client
+ADD start_sql.sh /
+RUN chmod +x /start_sql.sh
+CMD /start_sql.sh
