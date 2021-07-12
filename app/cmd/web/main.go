@@ -35,7 +35,7 @@ func main() {
 	addr := flag.String("addr", ":4000", "Сетевой адрес HTTP")
 	flag.Parse()
 
-	dsn := flag.String("dsn", "web:1111@/snippetbox?parseTime=true", "Название MySQL источника данных")
+	dsn := flag.String("dsn", "web:password@tcp(docker.for.mac.localhost:3306)/snippetbox?parseTime=true", "Название MySQL источника данных")
 
 	//creat std logger
 	infoLog := log.New(os.Stdout, "INFO\t", log.Ldate | log.Ltime)
